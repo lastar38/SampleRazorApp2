@@ -23,7 +23,7 @@ namespace SampleRazorApp2.Pages
 
         public async Task OnGetAsync()
         {
-            Person = await _context.Person.ToListAsync();
+            Person = await _context.Person.Include("Messages").ToListAsync();
         }
     }
 }
