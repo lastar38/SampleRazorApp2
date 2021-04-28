@@ -173,3 +173,8 @@ D:\work\SampleRazorApp2\SampleRazorApp2\SampleRazorApp2\obj\Debug\netcoreapp3.1\
 D:\work\SampleRazorApp2\SampleRazorApp2\SampleRazorApp2\obj\Debug\netcoreapp3.1\Razor\Pages\Details.cshtml.g.cs
 D:\work\SampleRazorApp2\SampleRazorApp2\SampleRazorApp2\obj\Debug\netcoreapp3.1\Razor\Pages\Edit.cshtml.g.cs
 D:\work\SampleRazorApp2\SampleRazorApp2\SampleRazorApp2\obj\Debug\netcoreapp3.1\Razor\Pages\Find.cshtml.g.cs
+D:\work\SampleRazorApp2\SampleRazorApp2\SampleRazorApp2\obj\Debug\netcoreapp3.1\Razor\Pages\Msg\Create.cshtml.g.cs
+D:\work\SampleRazorApp2\SampleRazorApp2\SampleRazorApp2\obj\Debug\netcoreapp3.1\Razor\Pages\Msg\Delete.cshtml.g.cs
+D:\work\SampleRazorApp2\SampleRazorApp2\SampleRazorApp2\obj\Debug\netcoreapp3.1\Razor\Pages\Msg\Details.cshtml.g.cs
+D:\work\SampleRazorApp2\SampleRazorApp2\SampleRazorApp2\obj\Debug\netcoreapp3.1\Razor\Pages\Msg\Edit.cshtml.g.cs
+D:\work\SampleRazorApp2\SampleRazorApp2\SampleRazorApp2\obj\Debug\netcoreapp3.1\Razor\Pages\Msg\Index.cshtml.g.cs

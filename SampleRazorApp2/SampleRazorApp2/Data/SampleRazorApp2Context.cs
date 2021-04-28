@@ -15,5 +15,7 @@ namespace SampleRazorApp2.Data
         }
 
         public DbSet<SampleRazorApp2.Models.Person> Person { get; set; }
+
+        public DbSet<SampleRazorApp2.Models.Message> Message { get; set; }
     }
 }
