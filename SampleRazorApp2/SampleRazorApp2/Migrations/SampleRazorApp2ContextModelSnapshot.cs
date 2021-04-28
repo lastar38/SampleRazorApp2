@@ -18,6 +18,27 @@ namespace SampleRazorApp2.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("SampleRazorApp2.Models.Message", b =>
+                {
+                    b.Property<int>("MessageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PersonKey")
+                        .HasColumnType("int");
+
+                    b.HasKey("MessageId");
+
+                    b.HasIndex("PersonKey");
+
+                    b.ToTable("Message");
+                });
+
             modelBuilder.Entity("SampleRazorApp2.Models.Person", b =>
                 {
                     b.Property<int>("PersonId")
@@ -32,11 +53,21 @@ namespace SampleRazorApp2.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("PersonId");
 
                     b.ToTable("Person");
+                });
+
+            modelBuilder.Entity("SampleRazorApp2.Models.Message", b =>
+                {
+                    b.HasOne("SampleRazorApp2.Models.Person", "Person")
+                        .WithMany("Messages")
+                        .HasForeignKey("PersonKey")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
